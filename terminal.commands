@@ -185,3 +185,280 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 @suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+👋 Welcome to Codespaces! You are on our default image. 
+   - It includes runtimes and tools for Python, Node.js, Docker, and more. See the full list here: https://aka.ms/ghcs-default-image
+   - Want to use a custom image instead? Learn more here: https://aka.ms/configure-codespace
+
+🔍 To explore VS Code to its fullest, search using the Command Palette (Cmd/Ctrl + Shift + P or F1).
+
+📝 Edit away, run your app as usual, and we'll automatically make it available for you to access.
+
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ pwd
+/workspaces/portfolio.web
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ ls
+README.md  terminal.commands
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+nothing to commit, working tree clean
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ git clone https://github.com/suvrajeet01/albinotonnina.com.git
+Cloning into 'albinotonnina.com'...
+remote: Enumerating objects: 2078, done.
+remote: Counting objects: 100% (535/535), done.
+remote: Compressing objects: 100% (229/229), done.
+remote: Total 2078 (delta 301), reused 489 (delta 293), pack-reused 1543
+Receiving objects: 100% (2078/2078), 26.22 MiB | 4.67 MiB/s, done.
+Resolving deltas: 100% (1116/1116), done.
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ ll albinotonnina.com/
+total 640
+drwxrwxrwx+ 7 codespace codespace   4096 Apr 27 18:31 ./
+drwxrwxrwx+ 4 codespace root        4096 Apr 27 18:31 ../
+-rw-rw-rw-  1 codespace codespace    204 Apr 27 18:31 .babelrc
+-rw-rw-rw-  1 codespace codespace      5 Apr 27 18:31 .eslintignore
+-rw-rw-rw-  1 codespace codespace    671 Apr 27 18:31 .eslintrc
+drwxrwxrwx+ 8 codespace codespace   4096 Apr 27 18:31 .git/
+drwxrwxrwx+ 3 codespace codespace   4096 Apr 27 18:31 .github/
+-rw-rw-rw-  1 codespace codespace     17 Apr 27 18:31 .gitignore
+-rw-rw-rw-  1 codespace codespace    184 Apr 27 18:31 .stylelintrc.json
+-rw-rw-rw-  1 codespace codespace     36 Apr 27 18:31 .travis.yml
+drwxrwxrwx+ 2 codespace codespace   4096 Apr 27 18:31 .vscode/
+-rw-rw-rw-  1 codespace codespace   3220 Apr 27 18:31 CODE_OF_CONDUCT.md
+-rw-rw-rw-  1 codespace codespace  17505 Apr 27 18:31 LICENSE
+-rwxrwxrwx  1 codespace codespace    478 Apr 27 18:31 README.md*
+-rw-rw-rw-  1 codespace codespace     50 Apr 27 18:31 jest.config.js
+-rw-rw-rw-  1 codespace codespace   2295 Apr 27 18:31 package.json
+drwxrwxrwx+ 6 codespace codespace   4096 Apr 27 18:31 src/
+drwxrwxrwx+ 3 codespace codespace   4096 Apr 27 18:31 tests/
+-rw-rw-rw-  1 codespace codespace   5244 Apr 27 18:31 webpack.config.babel.js
+-rw-rw-rw-  1 codespace codespace 556136 Apr 27 18:31 yarn.lock
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ cd albinotonnina.com/
+@suvrajeet01 ➜ /workspaces/portfolio.web/albinotonnina.com (master) $ rm .git
+rm: cannot remove '.git': Is a directory
+@suvrajeet01 ➜ /workspaces/portfolio.web/albinotonnina.com (master) $ rm -rf .git
+@suvrajeet01 ➜ /workspaces/portfolio.web/albinotonnina.com (trunk) $ ll
+total 636
+drwxrwxrwx+ 6 codespace codespace   4096 Apr 27 18:32 ./
+drwxrwxrwx+ 4 codespace root        4096 Apr 27 18:31 ../
+-rw-rw-rw-  1 codespace codespace    204 Apr 27 18:31 .babelrc
+-rw-rw-rw-  1 codespace codespace      5 Apr 27 18:31 .eslintignore
+-rw-rw-rw-  1 codespace codespace    671 Apr 27 18:31 .eslintrc
+drwxrwxrwx+ 3 codespace codespace   4096 Apr 27 18:31 .github/
+-rw-rw-rw-  1 codespace codespace     17 Apr 27 18:31 .gitignore
+-rw-rw-rw-  1 codespace codespace    184 Apr 27 18:31 .stylelintrc.json
+-rw-rw-rw-  1 codespace codespace     36 Apr 27 18:31 .travis.yml
+drwxrwxrwx+ 2 codespace codespace   4096 Apr 27 18:31 .vscode/
+-rw-rw-rw-  1 codespace codespace   3220 Apr 27 18:31 CODE_OF_CONDUCT.md
+-rw-rw-rw-  1 codespace codespace  17505 Apr 27 18:31 LICENSE
+-rwxrwxrwx  1 codespace codespace    478 Apr 27 18:31 README.md*
+-rw-rw-rw-  1 codespace codespace     50 Apr 27 18:31 jest.config.js
+-rw-rw-rw-  1 codespace codespace   2295 Apr 27 18:31 package.json
+drwxrwxrwx+ 6 codespace codespace   4096 Apr 27 18:31 src/
+drwxrwxrwx+ 3 codespace codespace   4096 Apr 27 18:31 tests/
+-rw-rw-rw-  1 codespace codespace   5244 Apr 27 18:31 webpack.config.babel.js
+-rw-rw-rw-  1 codespace codespace 556136 Apr 27 18:31 yarn.lock
+@suvrajeet01 ➜ /workspaces/portfolio.web/albinotonnina.com (trunk) $ cd ..
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ mv albinotonnina.com/ website
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        website/
+
+nothing added to commit but untracked files present (use "git add" to track)
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ git add .
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   website/.babelrc
+        new file:   website/.eslintignore
+        new file:   website/.eslintrc
+        new file:   website/.github/workflows/codeql-analysis.yml
+        new file:   website/.gitignore
+        new file:   website/.stylelintrc.json
+        new file:   website/.travis.yml
+        new file:   website/.vscode/launch.json
+        new file:   website/.vscode/settings.json
+        new file:   website/CODE_OF_CONDUCT.md
+        new file:   website/LICENSE
+        new file:   website/README.md
+        new file:   website/jest.config.js
+        new file:   website/package.json
+        new file:   website/src/App.js
+        new file:   website/src/images/albinotonnina.com.mp4
+        new file:   website/src/images/facebook_image.png
+        new file:   website/src/images/logo.png
+        new file:   website/src/index.html
+        new file:   website/src/index.js
+        new file:   website/src/scene/calculateStyles.js
+        new file:   website/src/scene/index.js
+        new file:   website/src/scene/scene.ai
+        new file:   website/src/scene/scene.svg
+        new file:   website/src/scene/tickFunction.js
+        new file:   website/src/scene/transition-utilities.js
+        new file:   website/src/scene/transitions.js
+        new file:   website/src/styles/main.css
+        new file:   website/src/subtitles/index.js
+        new file:   website/src/subtitles/style.css
+        new file:   website/src/subtitles/subtitles.json
+        new file:   website/tests/__mocks__/fileMock.js
+        new file:   website/tests/__mocks__/htmlMock.js
+        new file:   website/tests/__mocks__/styleMock.js
+        new file:   website/tests/__mocks__/svgMock.js
+        new file:   website/tests/transition-utilities.test.js
+        new file:   website/webpack.config.babel.js
+        new file:   website/yarn.lock
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal.commands
+
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ git commit -m "website"
+[trunk cff008f] website
+ 38 files changed, 41616 insertions(+)
+ create mode 100644 website/.babelrc
+ create mode 100644 website/.eslintignore
+ create mode 100644 website/.eslintrc
+ create mode 100644 website/.github/workflows/codeql-analysis.yml
+ create mode 100644 website/.gitignore
+ create mode 100644 website/.stylelintrc.json
+ create mode 100644 website/.travis.yml
+ create mode 100644 website/.vscode/launch.json
+ create mode 100644 website/.vscode/settings.json
+ create mode 100644 website/CODE_OF_CONDUCT.md
+ create mode 100644 website/LICENSE
+ create mode 100755 website/README.md
+ create mode 100644 website/jest.config.js
+ create mode 100644 website/package.json
+ create mode 100644 website/src/App.js
+ create mode 100644 website/src/images/albinotonnina.com.mp4
+ create mode 100644 website/src/images/facebook_image.png
+ create mode 100644 website/src/images/logo.png
+ create mode 100644 website/src/index.html
+ create mode 100644 website/src/index.js
+ create mode 100644 website/src/scene/calculateStyles.js
+ create mode 100755 website/src/scene/index.js
+ create mode 100644 website/src/scene/scene.ai
+ create mode 100644 website/src/scene/scene.svg
+ create mode 100644 website/src/scene/tickFunction.js
+ create mode 100644 website/src/scene/transition-utilities.js
+ create mode 100644 website/src/scene/transitions.js
+ create mode 100644 website/src/styles/main.css
+ create mode 100644 website/src/subtitles/index.js
+ create mode 100644 website/src/subtitles/style.css
+ create mode 100644 website/src/subtitles/subtitles.json
+ create mode 100644 website/tests/__mocks__/fileMock.js
+ create mode 100644 website/tests/__mocks__/htmlMock.js
+ create mode 100644 website/tests/__mocks__/styleMock.js
+ create mode 100644 website/tests/__mocks__/svgMock.js
+ create mode 100644 website/tests/transition-utilities.test.js
+ create mode 100644 website/webpack.config.babel.js
+ create mode 100644 website/yarn.lock
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal.commands
+
+no changes added to commit (use "git add" and/or "git commit -a")
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ git add .
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   terminal.commands
+
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ git commit -m "terminal.commands"
+[trunk 1d7c651] terminal.commands
+ 1 file changed, 187 insertions(+), 1 deletion(-)
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ git push
+Enumerating objects: 55, done.
+Counting objects: 100% (55/55), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (45/45), done.
+Writing objects: 100% (53/53), 7.65 MiB | 5.06 MiB/s, done.
+Total 53 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/suvrajeet01/portfolio.web
+   f09d188..1d7c651  trunk -> trunk
+@suvrajeet01 ➜ /workspaces/portfolio.web (trunk) $ 
